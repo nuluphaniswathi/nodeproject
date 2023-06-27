@@ -1,0 +1,166 @@
+//creating emp
+POST http://localhost:4000/create-emp 
+Content-Type: application/json
+
+{  
+    "emp_id":200,
+    "emp_name":"swathi",
+    "job":{
+        "job_id":2,
+        "job_desc":"flutter"
+    }
+}
+
+###
+POST http://localhost:4000/create-job 
+Content-Type: application/json
+
+{  
+    "job_id":2,
+    "job_desc":"flutter",
+    "emp":{
+        "emp_id":200,
+        "emp_name":"swathi"
+    }
+}
+
+###
+GET http://localhost:4000/emps
+
+
+###
+POST http://localhost:4000/create-persons
+Content-Type: application/json
+
+{
+    "cust_id":100,
+    "cust_name":"ravi",
+    "accounts":[
+        {
+            "bank_name":"sbi",
+            "account_number":12345
+        },
+        {
+            "bank_name":"axis",
+            "account_number":34567
+        },{
+            "bank_name":"hdfc",
+            "account_number":7676767
+        }
+    ]
+}
+//nested objects-accounts should be same as association name
+
+###
+POST http://localhost:4000/creating-user 
+Content-Type: application/json
+
+{
+     "user_id":100,
+    "user_name":"Swathi",
+    "address":{
+        "street":"kphb",
+        "city":"hyderabad",
+        "contact_detail":{
+            "mobile":99999,
+            "landline":232434
+        }
+    },
+    "skills":[
+        {
+            "skill_id":1,
+            "skill_name":"react"
+        },
+        {
+            "skill_id":2,
+            "skill_name":"angular"
+        }
+    ]
+}
+
+###
+GET http://localhost:4000/users
+
+
+
+
+###
+POST http://localhost:4000/create-person 
+Content-Type: application/json
+
+{
+    
+    "person_id":200,
+    "person_name":"preethi"
+}
+
+###
+POST http://localhost:4000/skill 
+Content-Type: application/json
+
+{
+    
+    "skill_id":200,
+    "skill_name":"react",
+    "person_id":200
+}
+
+
+
+
+
+###
+POST http://localhost:4000/create-user 
+Content-Type: application/json
+
+{
+    "firstName":"Phani",
+    "lastName":"Swathi",
+    "email":"swathi@gmail.com",
+    "password":"swathi123",
+    "age":21,
+    "gender":"female"
+    
+    
+}
+
+
+
+
+###
+POST http://localhost:4000/create-user 
+Content-Type: application/json
+
+{
+    "customer_id":200,
+    "customer_name":"swathi",
+    "password":"sgdg",
+    "email":"sfd@gmail.com",
+    "age":20
+    
+}
+
+###
+GET http://localhost:4000/get-customer 
+
+###
+GET http://localhost:4000/customer/500
+
+###
+GET http://localhost:4000/customer/name/deethi
+
+###
+PUT http://localhost:4000/update-customer 
+Content-Type: application/json
+
+{
+    "customer_id":500,
+    "customer_name":"saideepthi",
+    "password":"Swathi123",
+    "email":"sfd@gmail.com",
+    "age":20
+    
+}
+
+###
+DELETE http://localhost:4000/delete-customer/500

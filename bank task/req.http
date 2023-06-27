@@ -1,0 +1,39 @@
+POST http://localhost:4000/account-api/create-user 
+Content-Type: application/json
+
+{
+    "username":"rani",
+    "bank_name":"sbi",
+    "account_no":6789,
+    "amount":1000
+}
+
+###
+PUT http://localhost:4000/account-api/deposit
+Content-Type: application/json
+
+{
+    "username":"rani",
+    "bank_name":"sbi",
+    "account_no":6789,
+    "amount":10000
+}
+
+###
+PUT http://localhost:4000/account-api/withdrawl
+Content-Type: application/json
+
+{
+    "username":"swathi",
+    "bank_name":"sbi",
+    "account_no":12345,
+    "amount":1200
+}
+
+###
+PUT http://localhost:4000/account-api/transfer/userA/12345/userB/6789/amount/25000
+Content-Type: application/json
+
+{
+    "amount":25000
+}

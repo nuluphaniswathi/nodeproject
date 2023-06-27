@@ -1,0 +1,67 @@
+POST http://localhost:4000/student-api/student
+Content-Type: application/json
+
+{
+    "roll_no":6,
+    "name":"aaq",
+    "dob":"2001-10-27",
+    "email":"aaa@gmail.com"
+}
+
+###
+GET http://localhost:4000/student-api/students
+
+###
+GET http://localhost:4000/student-api/students/2
+
+###
+POST http://localhost:4000/student-api/student/6/address
+Content-Type: application/json
+
+{   
+        "street":"sidhiqnagar",
+        "city":"bangale",
+        "roll_no":6
+}
+
+###
+POST http://localhost:4000/student-api/semister
+Content-Type: application/json
+
+{
+    "semister_id":2,
+    "maths":30,
+    "Physics":60,
+    "Chemistry":60,
+    "roll_no":2
+}
+
+###
+GET http://localhost:4000/student-api/address
+
+###
+PUT http://localhost:4000/student-api/student/2/new-address
+Content-type:application/json
+
+{
+    "street":"ranga",
+    "city":"bangalore"
+}
+
+###
+PUT http://localhost:4000/student-api/student/1/semester/2/new-marks
+Content-Type: application/json
+
+{
+    "semister_id":2,
+    "maths":30,
+    "Physics":40,
+    "Chemistry":60,
+    "roll_no":1
+}
+
+###
+DELETE http://localhost:4000/student-api/student/1
+
+###
+GET http://localhost:4000/student-api/students-with-aggregate

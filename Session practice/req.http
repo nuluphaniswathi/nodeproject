@@ -1,0 +1,33 @@
+POST http://localhost:4000/user-api/registration
+Content-Type: application/json
+
+{
+    "username":"swathi",
+    "password":"sw@thi"
+
+}
+
+###
+POST http://localhost:4000/user-api/loginUser
+Content-Type: application/json
+
+{
+    "username":"swathi",
+    "password":"sw@thi"
+}
+
+###
+GET http://localhost:4000/user-api/logout 
+
+###
+PUT http://localhost:4000/user-api/modify-user
+Content-Type: application/json
+
+{
+    "username":"swathi",
+    "password":"swathi123"
+}
+
+###
+GET http://localhost:4000/user-api/get-users
+

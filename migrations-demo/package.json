@@ -1,0 +1,29 @@
+{
+  "name": "migrations-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"nodemon server.js",
+    "run-migration":"npx sequelize-cli db:migrate",
+    "undo-migration":"npx sequelize-cli db:migrate:undo",
+    "run-seedall":"npx sequelize-cli db:seed:all",
+    "seed-undo":"npx sequelize-cli db:seed:undo",
+    "undo-allseeds":"npx sequelize-cli db:seed:undo:all",
+    "run-specificseed":"npx sequelize-cli db:seed --seed <seedname>"
+
+
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mysql2": "^3.1.2",
+    "sequelize": "^6.29.0"
+  }
+}

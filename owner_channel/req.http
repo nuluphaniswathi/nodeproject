@@ -1,0 +1,26 @@
+POST http://localhost:4000/owner-api/create-owner 
+Content-Type: application/json
+
+{
+    
+    "owner_id":3,
+    "owner_name":"swathi",
+    "channel":{
+        "channel_id":3,
+        "channel_name":"chanel1",
+        "videos":[
+            {
+                "video_id":4,
+                "video_title":"videotitle"
+            },
+            {
+                "video_id":5,
+                "video_title":"videotitle2"
+            }
+        ]
+    
+    }
+}
+
+###
+GET http://localhost:4000/owner-api/get-details 

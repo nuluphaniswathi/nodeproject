@@ -1,0 +1,9 @@
+{
+  "development": {
+    "username": "wal",
+    "password": "WESTAGILELABS2023",
+    "database": "migration_db",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
